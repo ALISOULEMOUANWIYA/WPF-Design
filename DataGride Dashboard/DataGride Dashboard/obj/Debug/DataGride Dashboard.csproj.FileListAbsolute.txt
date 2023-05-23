@@ -1,0 +1,116 @@
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\DataGride Dashboard.exe.config
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\DataGride Dashboard.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\DataGride Dashboard.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Codicons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Coolicons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Entypo.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.FileIcons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Fontisto.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Ionicons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.JamIcons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Microns.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Modern.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Octicons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Typicons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Unicons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Zondicons.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Codicons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Codicons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Coolicons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Coolicons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.FileIcons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.FileIcons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Fontisto.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Fontisto.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Ionicons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Ionicons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.JamIcons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.JamIcons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Microns.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Microns.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Modern.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Modern.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Octicons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Octicons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Typicons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Typicons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Unicons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Unicons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Zondicons.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\bin\Debug\MahApps.Metro.IconPacks.Zondicons.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\DataGride Dashboard.csproj.AssemblyReference.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\DataGride Dashboard.csproj.SuggestedBindingRedirects.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\MainWindow.baml
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\MainWindow.g.cs
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\App.g.cs
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\DataGride Dashboard_MarkupCompile.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\DataGride Dashboard.g.resources
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\DataGride_Dashboard.Properties.Resources.resources
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\DataGride Dashboard.csproj.GenerateResource.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\DataGride Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\DataGride Dashboard.csproj.CopyComplete
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\DataGride Dashboard.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\DataGride Dashboard.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\DataGride Dashboard\DataGride Dashboard\obj\Debug\App.baml

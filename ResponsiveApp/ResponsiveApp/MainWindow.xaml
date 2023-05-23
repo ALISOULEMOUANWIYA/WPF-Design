@@ -1,0 +1,526 @@
+﻿<Window x:Class="ResponsiveApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:uc="clr-namespace:ResponsiveApp.UserControls"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        Title="MainWindow"
+        MinWidth="1080"
+        MinHeight="720"
+        Height="720"
+        Width="1280"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        x:Name="mainWindow">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+    </Window.Resources>
+    <Border Background="#151f2d"
+            BorderBrush="#FFFF00"
+            BorderThickness="5"
+            CornerRadius="8,8,0,8"
+            MouseDown="Border_MouseDown"
+            MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Grid>
+            <!-- Redimentionnement du fenetre -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="110" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="250" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <!-- And Redimentionnement du fenetre -->
+
+            <!-- Lefte Menu -->
+            <Border Grid.RowSpan="3" Background="#1e2e44" CornerRadius="0 0 0 0">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" Opacity="0.2"/>
+                </Border.Effect>
+                <Grid>
+                    <StackPanel VerticalAlignment="Top">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 10 0 40">
+                            <!-- Tab Button controller Window -->
+                            <Button Style="{StaticResource topButtonQuitter}" 
+                            Click="Button_Click">
+                                <Ellipse Width="8" Height="8" Fill="#eb1700"/>
+                            </Button>
+
+                            <Button Style="{StaticResource topButtonGrandir}" 
+                            Click="Button_Click_1">
+                                <Ellipse Width="8" Height="8" Fill="#ffaf01" Margin="7 0"/>
+                            </Button>
+
+                            <Button Style="{StaticResource topButtonReduire}" 
+                            Click="Button_Click_2">
+                                <Ellipse Width="8" Height="8" Fill="#009d00"/>
+                            </Button>
+                            <!-- And Tab Button controller Window -->
+                        </StackPanel>
+                        <Border Width="50"
+                                Height="50" 
+                                Padding="2"
+                                Background="#FFFF00" 
+                                CornerRadius="100"
+                                Margin="0 -25 0 0">
+                            <Ellipse>
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="/asset/image/telma.png"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            
+                        </Border>
+                        <TextBlock Text="Telma Service" 
+                                   TextAlignment="Center" 
+                                   Foreground="#FFFF00" 
+                                   FontWeight="Bold" 
+                                   FontSize="15" 
+                                   Margin="0 10 0 0"/>
+                        <StackPanel Margin="0 30 0 0">
+                            <uc:MenuButton Icon="HomeVariant" IsActive="True"/>
+                            <uc:MenuButton Icon="Finance"/>
+                            <uc:MenuButton Icon="CommentMultipleOutline"/>
+                            <uc:MenuButton Icon="AccountSearchOutline"/>
+                            <uc:MenuButton Icon="BookSyncOutline"/>
+                            <uc:MenuButton Icon="AlertCircleCheckOutline"/>
+                            <uc:MenuButton Icon="CogOutline"/> 
+                        </StackPanel>
+                        <Separator Margin="0 14 0 0" Background="#ccc" Width="60" Opacity="0.4"/>
+                    </StackPanel>
+                    <StackPanel  VerticalAlignment="Bottom" Orientation="Horizontal">
+                        <uc:MenuButton Icon="Power"  Margin="25 0 0 10"/>
+                        <StackPanel VerticalAlignment="Center" Margin="8 -13 0 0">
+                            <TextBlock Text="Logout"
+                                       FontWeight="SemiBold"
+                                       Foreground="#CCC"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <!-- And Lefte Menu -->
+            
+            <!-- ################ SECTION-->
+            <!-- Top Menu -->
+            <Border  Grid.Column="1"  Background="#1e2e44"
+                     BorderBrush="#FFFF00"
+                     BorderThickness="0 0 0 3">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+                </Border.Effect>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Margin="10 15 10 15">
+                        <TextBlock Margin="40 0 15 0"
+                               VerticalAlignment="Center"
+                               Foreground="#868686"
+                               Panel.ZIndex="1"
+                               Text="search ..."
+                               IsHitTestVisible="False"
+                               Visibility="{Binding ElementName=textBoxSearch, Path=Text.IsEmpty, Converter={StaticResource BoolToVis}}"/>
+                        <TextBox x:Name="textBoxSearch" Style="{StaticResource SearchTextBox}"/>
+
+                        <Icon:PackIconMaterial Kind="Magnify"
+                                           Width="15"
+                                           Height="15"
+                                                   Foreground="#F0E68C"
+                                                   Margin="0 0 15 0"
+                                                   HorizontalAlignment="Right"
+                                                   VerticalAlignment="Center"
+                                                   />
+                    </Grid>
+                    <!-- Button -->
+                    <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="20 0 0 0">
+                        <Button Style="{StaticResource TopmenuButton}">
+                            <Icon:PackIconMaterial Kind="Bell" Style="{StaticResource TopmenuIcon}"/>
+                        </Button>
+
+                        <Button Style="{StaticResource TopmenuButton}">
+                            <Icon:PackIconMaterial Kind="Bookmark" Style="{StaticResource TopmenuIcon}"/>
+                        </Button>
+
+                        <Button Style="{StaticResource TopmenuButton}">
+                            <Icon:PackIconMaterial Kind="History" Style="{StaticResource TopmenuIcon}"/>
+                        </Button>
+
+                        <Button Style="{StaticResource TopmenuButton}">
+                            <Icon:PackIconMaterial Kind="IdCard" Style="{StaticResource TopmenuIcon}"/>
+                        </Button>
+
+                        <Button Style="{StaticResource TopmenuButton}" Background="#1e2e44">
+                            <Icon:PackIconMaterial Kind="Database" Style="{StaticResource TopmenuIcon}" />
+                        </Button>
+
+
+
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!--Information des taches possible -->
+            <Grid Grid.Column="1" Grid.Row="1" Grid.RowSpan="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <uc:TacheCard Affaire="Cart Sim Vendu"
+                                  Color="#7163ba"
+                                  Nombre="4"
+                                  Pourcentage="4"
+                                  ValueSlider="1"
+                                  Jour="12/10/2022"
+                                  Montant="400 fc"
+                                  IconAffaire="Sim"
+                                  Margin="0 5 0 0" />
+                    <uc:TacheCard Margin="0 5 0 0" 
+                                  Color="#DC143C"
+                                  Grid.Column="1"
+                                  Affaire="Telephone Vendu"
+                                  Nombre="10"
+                                  Pourcentage="10"
+                                  ValueSlider="2"
+                                  Jour="12/10/2022"
+                                  Montant="10 000 fc"
+                                  IconAffaire="TabletCellphone"/>
+                    <uc:TacheCard Margin="0 5 0 0"
+                                  Color="#FFD700"
+                                  Grid.Column="2"
+                                  Affaire="Credit Vendu"
+                                  Nombre="15"
+                                  Pourcentage="15"
+                                  ValueSlider="3"
+                                  Jour="12/10/2022"
+                                  Montant="1500 fc"
+                                  IconAffaire="TransferRight"/>
+                </Grid>
+                <!-- Costomer Based region -->
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="320"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Background="#1e2e44" 
+                            CornerRadius="20 20 20 20"
+                            Margin="10 10 -5 0"
+                            Padding="10">
+                        <StackPanel Orientation="Vertical">
+                            <Grid>
+                                <TextBlock Text="Région basée sur les clients" 
+                                           Foreground="#fff"
+                                           FontWeight="SemiBold"
+                                           FontSize="20"
+                                           />
+                                <StackPanel Orientation="Horizontal" 
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Right">
+                                    <Icon:PackIconMaterial Kind="ArrowLeftCircle" Margin="0 0 10 0" Foreground="#ccc"/>
+                                    <Icon:PackIconMaterial Kind="ArrowRightCircle" Foreground="#ccc"/>
+                                </StackPanel>
+                            </Grid>
+                            <Grid Margin="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel>
+                                    <lvc:PieChart Name="Chart"  
+                                                  Series="{Binding SeriesCollection}" 
+                                                  LegendLocation="Right"
+                                                  Foreground="#fff"
+                                                  InnerRadius="15" 
+                                                  Margin="0 0 0 0"
+                                                  Height="150"
+                                                  Width="245">
+                                        <lvc:PieChart.ChartLegend>
+                                            <lvc:DefaultLegend BulletSize="20">
+
+                                            </lvc:DefaultLegend>
+                                        </lvc:PieChart.ChartLegend>
+                                        <lvc:PieChart.DataTooltip>
+                                            <lvc:DefaultTooltip BulletSize="20">
+
+                                            </lvc:DefaultTooltip>
+                                        </lvc:PieChart.DataTooltip>
+                                    </lvc:PieChart>
+                                </StackPanel>
+                                <Border Grid.Column="1">
+                                    <!-- Chart -->
+                                    <lvc:CartesianChart Grid.Row="1" Margin="0 0 0 0" LegendLocation="None">
+                                        <lvc:CartesianChart.DataTooltip>
+                                            <lvc:DefaultTooltip Background="#000" Foreground="#ffffff" Opacity=".8"/>
+                                        </lvc:CartesianChart.DataTooltip>
+
+                                        <lvc:CartesianChart.AxisX>
+                                            <lvc:Axis Foreground="#90a3b2"
+                                                      Labels="Jan, Feb, Mar, apr, May, Jun, Jul, aug, Sep, Oct, Nov, Dec">
+                                                <lvc:Axis.Separator>
+                                                    <lvc:Separator StrokeThickness="0" Step="1"/>
+                                                </lvc:Axis.Separator>
+                                            </lvc:Axis>
+                                        </lvc:CartesianChart.AxisX>
+
+                                        <lvc:CartesianChart.AxisY>
+                                            <lvc:Axis Foreground="#90a3b2" ShowLabels="True" MinValue="0" MaxValue="8">
+                                                <lvc:Axis.Separator>
+                                                    <lvc:Separator StrokeThickness="0" Step="2"/>
+                                                </lvc:Axis.Separator>
+                                            </lvc:Axis>
+                                        </lvc:CartesianChart.AxisY>
+
+                                        <lvc:CartesianChart.Series>
+                                            <lvc:ColumnSeries Values="1, 2.2, 2.3, 2.5" MaxColumnWidth="50">
+                                                <lvc:ColumnSeries.Fill>
+                                                    <LinearGradientBrush>
+                                                        <GradientStop Color="#2889fc" Offset="0"/>
+                                                        <GradientStop Color="#ffffff" Offset="1"/>
+                                                    </LinearGradientBrush>
+                                                </lvc:ColumnSeries.Fill>
+                                            </lvc:ColumnSeries>
+
+                                            <lvc:ColumnSeries Values="3.5, 4, 3, 4.5" MaxColumnWidth="10">
+                                                <lvc:ColumnSeries.Fill>
+                                                    <LinearGradientBrush>
+                                                        <GradientStop Color="#ff6f4d" Offset="0"/>
+                                                        <GradientStop Color="#ffffff" Offset="1"/>
+                                                    </LinearGradientBrush>
+                                                </lvc:ColumnSeries.Fill>
+                                            </lvc:ColumnSeries>
+
+                                            <lvc:ColumnSeries Values="5.5, 4.1, 5.3, 6.5" MaxColumnWidth="10">
+                                                <lvc:ColumnSeries.Fill>
+                                                    <LinearGradientBrush>
+                                                        <GradientStop Color="#FFFF00" Offset="0"/>
+                                                        <GradientStop Color="#ffffff" Offset="1"/>
+                                                    </LinearGradientBrush>
+                                                </lvc:ColumnSeries.Fill>
+                                            </lvc:ColumnSeries>
+                                        </lvc:CartesianChart.Series>
+
+                                    </lvc:CartesianChart>
+                                </Border>
+                            </Grid>
+                            
+                        </StackPanel>
+                    </Border>
+
+                    <!--iNFO CAISSE-->
+                    <uc:InfoCard Grid.Column="1" Margin="15 10 15 0"/>
+                </Grid>
+
+                <!-- Middle Bottom Section -->
+                <Grid Grid.Row="2" Grid.Column="1" Margin="10 10 0 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="470"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Style="{StaticResource mainBorder}"  Margin="0 0 10 0">
+
+                        <Grid>
+                            <!-- Title -->
+                            <TextBlock Text="Transaction des clients potentiels" Style="{StaticResource TitleText}"/>
+                            <!-- Filter Button -->
+                            <Button Style="{StaticResource TitleButton}" Margin="0 -3 0 0">
+                                <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource TopmenuIcon}"/>
+                            </Button>
+
+                            <!-- Country List View -->
+                            <ListView Margin="0 25 0 0" 
+                                  Background="Transparent" 
+                                  BorderThickness="0"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                                  ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                                <uc:TableUser UserName="Moussa" LastName="Ibrahime"  Flag="/Asset/icons/icons8-user-48.png" Price="10 000 FC" IsLevelUp="False"/>
+                                <uc:TableUser UserName="Mounira" LastName="Ishaka" Flag="/Asset/icons/icons8-woman-60.png" Price="30 000 FC" IsLevelUp="True"/>
+                                <uc:TableUser UserName="Halima" LastName="Mbaye" Flag="/Asset/icons/icons8-woman-60.png" Price="12 000 FC" IsLevelUp="True"/>
+                                <uc:TableUser UserName="Madjid" LastName="Abdereman" Flag="/Asset/icons/icons8-user-48.png" Price="25 000 FC" IsLevelUp="False"/>
+                                <uc:TableUser UserName="Ahmada" LastName="Youssouf" Flag="/Asset/icons/icons8-user-48.png" Price="50 000 FC" IsLevelUp="True"/> 
+                            </ListView>
+                        </Grid>
+                    </Border>
+                    
+                    
+                    <!-- Hire Section -->
+                    <uc:LiveCharLine Grid.Column="1" Margin="0 0 10 0"/>
+
+                    
+                </Grid>
+            </Grid>
+
+            
+
+            <!--############# SECTION-->
+            
+            <!-- Right Menu -->
+            <Border Grid.RowSpan="3"
+                    Background="#1e2e44" 
+                    Grid.Column="2" 
+                    CornerRadius="0 8 8 0">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" Opacity="0.2"/>
+                </Border.Effect>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <!-- User Connect -->
+                    <Border Margin="0 10 0 0" 
+                            Padding="3 0 10 0" 
+                            Background="#FFD700" 
+                            CornerRadius="35 0 0 35">
+                        <Grid VerticalAlignment="Center"
+                              Margin="0 0 0 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Orientation="Horizontal" 
+                                        Margin="0 0 0 0">
+
+                                <Border Width="65"
+                                            Height="67" 
+                                            Padding="2" 
+                                            Background="#009d00" 
+                                            CornerRadius="100">
+                                    <Ellipse>
+                                        <Ellipse.Fill>
+                                            <ImageBrush ImageSource="/asset/image/Abdillah.jpeg"/>
+                                        </Ellipse.Fill>
+                                    </Ellipse>
+                                </Border>
+                                <Border Width="22"
+                                            Height="22" 
+                                            Padding="1" 
+                                            Background="White"
+                                            CornerRadius="20"
+                                            VerticalAlignment="Top"
+                                            Margin="-13 15 0 0">
+                                    <Ellipse Width="20" 
+                                                 Height="20"
+                                                 VerticalAlignment="Center"
+                                                 Fill="#009d00" 
+                                                 HorizontalAlignment="Center"  
+                                                 />
+                                </Border>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" 
+                                        Orientation="Vertical" 
+                                        VerticalAlignment="Center" 
+                                        HorizontalAlignment="Center"
+                                        Margin="0 0 5 0">
+                                <TextBlock Text="Abdillah" 
+                                           Style="{StaticResource TitleText}" 
+                                           FontSize="30" 
+                                           HorizontalAlignment="Center"
+                                           Foreground="#000"/>
+                                <TextBlock Text="Administrateur" 
+                                           Style="{StaticResource SecondaryText}" 
+                                           FontSize="20"
+                                           Foreground="#000"/>
+                            </StackPanel>
+                            
+                        </Grid>
+                    </Border>
+
+                    <StackPanel Grid.Row="1"
+                                Margin="5 20 0 0">
+                        <TextBlock Text="Carte Membre" Style="{StaticResource TitleText}"/>
+                        <uc:CardUser Margin="0 10 0 0"/>
+                    </StackPanel>
+
+                      
+
+                    <Border Grid.Row="2"
+                            Margin="5 20 5 0">
+
+                        <Grid>
+                            <!-- Title -->
+                            <TextBlock Text="Historique du Raport" Style="{StaticResource TitleText}"/>
+                            <!-- Filter Button -->
+                            <Button Style="{StaticResource TitleButton}" Margin="0 -3 0 0">
+                                <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource TopmenuIcon}"/>
+                            </Button>
+                            <!-- Country List View -->
+                            <ListView  
+                              Margin="0 30 0 0" 
+                              Background="Transparent" 
+                              BorderThickness="0"
+                              ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                              ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                                <uc:ListControl NameUser="Moussa Ibrahime" 
+                                        TransferType="Transfer" 
+                                        Montant="1900 FC" 
+                                        DateTime="Hier" 
+                                        IsLevelUp="True"/>
+                                <uc:ListControl NameUser="Issa IbAhmad" 
+                                        TransferType="Depos" 
+                                        Montant="950 FC" 
+                                        DateTime="3 min" 
+                                        IsLevelUp="False"/>
+                                <uc:ListControl NameUser="Mahmoud djamal" 
+                                        TransferType="Depos" 
+                                        Montant="500 FC" 
+                                        DateTime="2 jour" 
+                                        IsLevelUp="True"/>
+                                <uc:ListControl NameUser="Moussa Ibrahime" 
+                                        TransferType="Transfer" 
+                                        Montant="2000 FC" 
+                                        DateTime="Hier" 
+                                        IsLevelUp="True"/>
+                                <uc:ListControl NameUser="Kassim ALI" 
+                                        TransferType="Depos" 
+                                        Montant="1200 fc" 
+                                        DateTime="2h" 
+                                        IsLevelUp="False"/>
+                                <uc:ListControl NameUser="Nadjime Ibrahime" 
+                                        TransferType="Transfer" 
+                                        Montant="10000 fc" 
+                                        DateTime="Hier" 
+                                        IsLevelUp="True"/>
+                                <uc:ListControl NameUser="Mounira Issa" 
+                                        TransferType="Transfer" 
+                                        Montant="30000 FC" 
+                                        DateTime="Hier" 
+                                        IsLevelUp="True"/>
+                                <uc:ListControl NameUser="Moussa Ibrahime" 
+                                        TransferType="Transfer" 
+                                        Montant="$963.60" 
+                                        DateTime="Hier" 
+                                        IsLevelUp="True"/>
+                            </ListView>
+                        </Grid>
+                        
+                    </Border>
+
+                    <Button Grid.Row="3"
+                            Content="+ Transaction"
+                            
+                            
+                            HorizontalAlignment="Center" 
+                            Style="{StaticResource TransactionButton}"/>
+                </Grid>
+            </Border>
+            
+
+        </Grid>
+    </Border>
+</Window>

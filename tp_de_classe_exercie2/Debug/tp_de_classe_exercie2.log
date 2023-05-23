@@ -1,0 +1,2 @@
+﻿tp_de_classe_exercie2.obj : error LNK2019: symbole externe non résolu "public: __thiscall Point::Point(void)" (??0Point@@QAE@XZ) référencé dans la fonction _main
+C:\Users\MOUANWIYA Ali Soule\source\repos\tp_de_classe_exercie2\Debug\tp_de_classe_exercie2.exe : fatal error LNK1120: 1 externes non résolus

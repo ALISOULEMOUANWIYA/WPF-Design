@@ -1,0 +1,8 @@
+﻿  Transmission_des_Tableau_a_une_Fonctions2.cpp
+Transmission_des_Tableau_a_une_Fonctions2.obj : error LNK2019: symbole externe non résolu "void __cdecl initialisation(int * *,int)" (?initialisation@@YAXPAPAHH@Z) référencé dans la fonction _main
+    Conseil sur les symboles définis et susceptibles de correspondre :
+      "void __cdecl initialisation(int (* const)[4],int)" (?initialisation@@YAXQAY03HH@Z)
+Transmission_des_Tableau_a_une_Fonctions2.obj : error LNK2019: symbole externe non résolu "int __cdecl somme(int * *)" (?somme@@YAHPAPAH@Z) référencé dans la fonction _main
+    Conseil sur les symboles définis et susceptibles de correspondre :
+      "int __cdecl somme(int (* const)[4])" (?somme@@YAHQAY03H@Z)
+C:\Users\MOUANWIYA Ali Soule\source\repos\Transmission_des_Tableau_a_une_Fonctions2\Debug\Transmission_des_Tableau_a_une_Fonctions2.exe : fatal error LNK1120: 2 externes non résolus

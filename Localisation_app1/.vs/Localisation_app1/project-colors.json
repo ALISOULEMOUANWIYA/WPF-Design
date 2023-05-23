@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "911a5510-52f8-4e58-a4be-95eb55cd3dcd": {
+      "ProjectGuid": "911a5510-52f8-4e58-a4be-95eb55cd3dcd",
+      "DisplayName": "Localisation_app1",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

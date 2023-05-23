@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d2d584b2-4886-43c0-b7c1-d3268945bcc4": {
+      "ProjectGuid": "d2d584b2-4886-43c0-b7c1-d3268945bcc4",
+      "DisplayName": "Fitness tracker",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

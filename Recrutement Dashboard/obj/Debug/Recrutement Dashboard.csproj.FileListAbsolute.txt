@@ -1,0 +1,43 @@
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\Recrutement Dashboard.exe.config
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\Recrutement Dashboard.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\Recrutement Dashboard.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\LiveCharts.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\LiveCharts.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\LiveCharts.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\Recrutement Dashboard.csproj.AssemblyReference.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\Recrutement Dashboard.csproj.SuggestedBindingRedirects.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\MainWindow.baml
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\MainWindow.g.cs
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\App.g.cs
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\Recrutement Dashboard_MarkupCompile.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\Recrutement Dashboard.g.resources
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\Recrutement_Dashboard.Properties.Resources.resources
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\Recrutement Dashboard.csproj.GenerateResource.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\Recrutement Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\Recrutement Dashboard.csproj.CopyComplete
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\Recrutement Dashboard.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\Recrutement Dashboard.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\UserControls\MenuButton.baml
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\UserControls\MenuButton.g.cs
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\App.baml
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\Recrutement Dashboard_MarkupCompile.lref
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\UserControls\InfoCard.baml
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\UserControls\InfoCard.g.cs
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\UserControls\Country.baml
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\UserControls\Country.g.cs
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\UserControls\MembreControls.baml
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\UserControls\MembreControls.g.cs
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\UserControls\UserCard.baml
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\UserControls\UserCard.g.cs
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\UserControls\InfUserCard.baml
+C:\Users\MOUANWIYA Ali Soule\source\repos\Recrutement Dashboard\obj\Debug\UserControls\InfUserCard.g.cs

@@ -1,0 +1,4 @@
+﻿  tp_de_classe_Exercie1.cpp
+tp_de_classe_Exercie1.obj : error LNK2019: symbole externe non résolu "public: void __thiscall Vecteur::afficher(void)" (?afficher@Vecteur@@QAEXXZ) référencé dans la fonction _main
+tp_de_classe_Exercie1.obj : error LNK2019: symbole externe non résolu "public: void __thiscall Vecteur::deplacer(double,double)" (?deplacer@Vecteur@@QAEXNN@Z) référencé dans la fonction _main
+C:\Users\MOUANWIYA Ali Soule\source\repos\tp_de_classe_Exercie1\Debug\tp_de_classe_Exercie1.exe : fatal error LNK1120: 2 externes non résolus

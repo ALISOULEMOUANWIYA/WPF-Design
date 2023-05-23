@@ -1,0 +1,25 @@
+﻿  Moezzz_1_4_Encapsulation_et_abstraction_.cpp
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(4,14): error C2143: erreur de syntaxe : absence de ';' avant '<'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(4,14): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(7,9): error C2143: erreur de syntaxe : absence de ';' avant '*'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(7,9): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(7,17): error C2238: jetons inattendus avant ';'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(12,9): error C2143: erreur de syntaxe : absence de ';' avant '*'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(12,9): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(12,24): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(10,4): error C2065: 'grille' : identificateur non déclaré
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(10,1): error C2061: erreur de syntaxe : identificateur 'Grille'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(17,13): error C2039: 'MyClass' n'est pas membre de 'JeuMorPion'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(5): message : voir la déclaration de 'JeuMorPion'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(17,22): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(19,1): warning C4508: 'MyClass' : la fonction doit retourner une valeur ; type de retour 'void' pris par défaut
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(21,14): error C2523: 'JeuMorPion::~MyClass' : balise destructeur non correcte
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(21,14): error C2039: 'MyClass' n'est pas membre de 'JeuMorPion'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(5): message : voir la déclaration de 'JeuMorPion'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(21,23): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(21,21): error C2084: la fonction 'int MyClass(void)' a déjà un corps
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(17): message : voir la définition précédente de 'MyClass'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\Moezzz_1_4_Encapsulation_et_abstraction_.cpp(9,11): error C2039: 'get_grille' n'est pas membre de 'JeuMorPion'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(5): message : voir la déclaration de 'JeuMorPion'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\Moezzz_1_4_Encapsulation_et_abstraction_.cpp(10,35): error C2039: 'get_grille' n'est pas membre de 'JeuMorPion'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Moezzz_1_4_Encapsulation_et_abstraction_\JeuMorPion.h(5): message : voir la déclaration de 'JeuMorPion'

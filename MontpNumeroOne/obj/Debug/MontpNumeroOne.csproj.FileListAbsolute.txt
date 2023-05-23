@@ -1,0 +1,7 @@
+C:\Users\MOUANWIYA Ali Soule\source\repos\MontpNumeroOne\bin\Debug\MontpNumeroOne.exe.config
+C:\Users\MOUANWIYA Ali Soule\source\repos\MontpNumeroOne\bin\Debug\MontpNumeroOne.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\MontpNumeroOne\bin\Debug\MontpNumeroOne.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\MontpNumeroOne\obj\Debug\MontpNumeroOne.csprojAssemblyReference.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\MontpNumeroOne\obj\Debug\MontpNumeroOne.csproj.CoreCompileInputs.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\MontpNumeroOne\obj\Debug\MontpNumeroOne.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\MontpNumeroOne\obj\Debug\MontpNumeroOne.pdb

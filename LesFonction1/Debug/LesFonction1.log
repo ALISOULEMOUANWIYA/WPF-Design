@@ -1,0 +1,3 @@
+﻿  LesFonction1.cpp
+C:\Users\MOUANWIYA Ali Soule\source\repos\LesFonction1\LesFonction1.cpp(34,1): warning C4326: le type de retour de 'main' doit être 'int' au lieu de 'void'
+  LesFonction1.vcxproj -> C:\Users\MOUANWIYA Ali Soule\source\repos\LesFonction1\Debug\LesFonction1.exe

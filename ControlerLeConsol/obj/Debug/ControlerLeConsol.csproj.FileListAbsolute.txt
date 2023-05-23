@@ -1,0 +1,7 @@
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlerLeConsol\bin\Debug\ControlerLeConsol.exe.config
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlerLeConsol\bin\Debug\ControlerLeConsol.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlerLeConsol\bin\Debug\ControlerLeConsol.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlerLeConsol\obj\Debug\ControlerLeConsol.csprojAssemblyReference.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlerLeConsol\obj\Debug\ControlerLeConsol.csproj.CoreCompileInputs.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlerLeConsol\obj\Debug\ControlerLeConsol.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlerLeConsol\obj\Debug\ControlerLeConsol.pdb

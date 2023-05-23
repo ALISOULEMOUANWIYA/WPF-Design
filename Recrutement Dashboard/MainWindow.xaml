@@ -1,0 +1,438 @@
+﻿<Window x:Class="Recrutement_Dashboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:uc="clr-namespace:Recrutement_Dashboard.UserControls"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        Height="720" 
+        Width="1280"
+        Background="Transparent"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        >
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+    </Window.Resources>
+
+    <Border CornerRadius="25" Background="#151f2d"
+            MouseDown="Border_MouseDown"
+            MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+        </Border.Effect>
+        <Grid>
+            <!-- Redimentionnement du fenetre -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="250" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <!-- And Redimentionnement du fenetre -->
+
+            <!-- Lefte Menu -->
+            <Border Grid.RowSpan="3" Background="#1e2e44" CornerRadius="25 0 0 25">
+                <Grid>
+                    
+                    <StackPanel VerticalAlignment="Top">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 10 0 40">
+                            <!-- Tab Button controller Window -->
+                            <Button Style="{StaticResource topButtonQuitter}" 
+                            Click="Button_Click">
+                                <Ellipse Width="8" Height="8" Fill="#eb1700"/>
+                            </Button>
+
+                            <Button Style="{StaticResource topButtonGrandir}" 
+                            Click="Button_Click_1">
+                                <Ellipse Width="8" Height="8" Fill="#ffaf01" Margin="7 0"/>
+                            </Button>
+
+                            <Button Style="{StaticResource topButtonReduire}" 
+                            Click="Button_Click_2">
+                                <Ellipse Width="8" Height="8" Fill="#009d00"/>
+                            </Button>
+                            <!-- And Tab Button controller Window -->
+                        </StackPanel>
+                        <Border Width="50"
+                                Height="50" 
+                                Padding="3"  
+                                CornerRadius="100"
+                                DockPanel.Dock="Top"
+                                Margin="0 0 0 0">
+                            <Ellipse>
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="/asset/icons/btn_flottant1.png"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                        </Border>
+                        <StackPanel Margin="0 50 0 0" >
+                            <uc:MenuButton Icon="HomeVariant" IsActive="True"/>
+                            <uc:MenuButton Icon="Finance"/>
+                            <uc:MenuButton Icon="CommentMultipleOutline"/>
+                            <uc:MenuButton Icon="AccountSearchOutline"/>
+                            <uc:MenuButton Icon="BookSyncOutline"/>
+                            <uc:MenuButton Icon="AlertCircleCheckOutline"/>
+                            <uc:MenuButton Icon="CogOutline"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <uc:MenuButton Icon="Power" VerticalAlignment="Bottom" Margin="0 0 0 15"/>
+                </Grid>
+            </Border>
+            <!-- And Lefte Menu -->
+            
+            <!-- Top Menu -->
+            <Grid Grid.Column="1" Margin="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid >
+                    <TextBlock Margin="40 0 15 0"
+                               VerticalAlignment="Center"
+                               Foreground="#868686"
+                               Panel.ZIndex="1"
+                               Text="search ..."
+                               IsHitTestVisible="False"
+                               Visibility="{Binding ElementName=textBoxSearch, Path=Text.IsEmpty, Converter={StaticResource BoolToVis}}"/>
+                    <TextBox x:Name="textBoxSearch" Style="{StaticResource SearchTextBox}"/>
+
+                    <Icon:PackIconMaterial Kind="Magnify"
+                                           Width="15"
+                                           Height="15"
+                                                   Foreground="#ff6d46"
+                                                   Margin="0 0 15 0"
+                                                   HorizontalAlignment="Right"
+                                                   VerticalAlignment="Center"
+                                                   />
+                </Grid>
+                <!-- Button -->
+                <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="20 0 0 0">
+                    <Button Style="{StaticResource TopmenuButton}">
+                        <Icon:PackIconMaterial Kind="Bell" Style="{StaticResource TopmenuIcon}"/>
+                    </Button>
+
+                    <Button Style="{StaticResource TopmenuButton}">
+                        <Icon:PackIconMaterial Kind="Bookmark" Style="{StaticResource TopmenuIcon}"/>
+                    </Button>
+
+                    <Button Style="{StaticResource TopmenuButton}">
+                        <Icon:PackIconMaterial Kind="History" Style="{StaticResource TopmenuIcon}"/>
+                    </Button>
+
+                    <Button Style="{StaticResource TopmenuButton}">
+                        <Icon:PackIconMaterial Kind="IdCard" Style="{StaticResource TopmenuIcon}"/>
+                    </Button>
+
+                    <Button Style="{StaticResource TopmenuButton}" Background="#1e2e44">
+                        <Icon:PackIconMaterial Kind="Database" Style="{StaticResource TopmenuIcon}" />
+                    </Button>
+                    
+                    
+                    
+                </StackPanel>
+            </Grid>
+            
+            <!-- Middle top Section -->
+            <Grid Grid.Row="1" Grid.Column="1" Margin="20 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!-- Info Card Left -->
+                <StackPanel Margin="10 0">
+                    <uc:InfoCard Number="18" Title="Average Days to Hire" IsTechnical="True" IsActive="True"/>
+                    <uc:InfoCard Number="54" Title="Average Days to Fill" IsTechnical="True"/>
+                    <uc:InfoCard Number="98" Title="Offre Acceptance Rate" IsTechnical="True"/>
+                </StackPanel>
+                <!-- And Info Card Left -->
+
+                <!-- Info Card Left -->
+                <StackPanel Margin="10 0" Grid.Column="1">
+                    <uc:InfoCard Number="23" Title="Average Days to Hire" IsTechnical="false"/>
+                    <uc:InfoCard Number="27" Title="Average Days to Fill" IsTechnical="false"/>
+                    <uc:InfoCard Number="99" Title="Offre Acceptance Rate" IsTechnical="false"/>
+                </StackPanel>
+                <!-- And Info Card Left -->
+
+                <!-- Cost Section -->
+                <Border Grid.Column="2" Style="{StaticResource mainBorder}" Margin="10 0 10 21.5">
+                    <Grid>
+                        <!-- Title -->
+                        <TextBlock Text="Recruitement Costs YTD" Style="{StaticResource TitleText}" FontSize="17"/>
+                        <!-- Filter Button -->
+                        <Button Style="{StaticResource TitleButton}" Margin="0 -3 0 0">
+                            <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource TopmenuIcon}"/>
+                        </Button>
+
+                        <!-- Legends -->
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right"
+                                    Margin="0 27 0 0">
+                            <Border Width="12" Height="12" Background="#7166f9" CornerRadius="3"/>
+                            <TextBlock Text="Marketing" VerticalAlignment="Center" Margin="7 0 20 0" Foreground="#d4d6d9"/>
+
+                            <Border Width="12" Height="12" Background="#101a28" CornerRadius="3"/>
+                            <TextBlock Text="Marketing" VerticalAlignment="Center" Margin="7 0 20 0" Foreground="#d4d6d9"/>
+                        </StackPanel>
+
+                        <!-- Cost Chart -->
+                        <lvc:CartesianChart LegendLocation="None" Margin="0 40 0 0">
+                            <lvc:CartesianChart.DataTooltip>
+                                <lvc:DefaultTooltip Background="#24336a" Foreground="#d5e2ff" />
+                            </lvc:CartesianChart.DataTooltip>
+
+                            <lvc:CartesianChart.AxisX>
+                                <lvc:Axis Foreground="#bcc0c6" ShowLabels="True"
+                                          Labels="Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Nev, Dec">
+                                    <lvc:Axis.Separator>
+                                        <lvc:Separator StrokeThickness="0" Step="1"/>
+                                    </lvc:Axis.Separator>
+                                </lvc:Axis>
+                            </lvc:CartesianChart.AxisX>
+
+                            <lvc:CartesianChart.AxisY>
+                                <lvc:Axis Foreground="#bcc0c6" ShowLabels="True"
+                                          MinValue="0"
+                                          MaxValue="30">
+                                    <lvc:Axis.Separator>
+                                        <lvc:Separator StrokeThickness="0"/>
+                                    </lvc:Axis.Separator>
+                                </lvc:Axis>
+                            </lvc:CartesianChart.AxisY>
+                            <lvc:CartesianChart.Series>
+                                <lvc:StackedColumnSeries Fill="#7166f9" MaxColumnWidth="15" Values="11, 13, 17, 20, 17, 15, 16, 13"/>
+                                <lvc:StackedColumnSeries Fill="#101a28" MaxColumnWidth="15" Values="6, 5, 6, 4, 6, 6, 7, 7"/>
+                            </lvc:CartesianChart.Series>
+                        </lvc:CartesianChart>
+                    </Grid>
+                </Border>
+            </Grid>
+            
+            <!-- Middle Bottom Section -->
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="450"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- Hire Section -->
+                <Border Style="{StaticResource mainBorder}" Margin="30 0 20 30">
+                    <Grid>
+                        <!-- Title -->
+                        <TextBlock Text="Top Hiring Sources" Style="{StaticResource TitleText}"/>
+                        <!-- Filter Button -->
+                        <Button Style="{StaticResource TitleButton}">
+                            <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource TopmenuIcon}"/>
+                        </Button>
+
+                        <!-- Legends -->
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right"
+                                    Margin="0 8 40 0">
+                            <Border Width="12" Height="12" Background="#7166f9" CornerRadius="3"/>
+                            <TextBlock Text="Marketing" VerticalAlignment="Center" Margin="7 0 20 0" Foreground="#d4d6d9"/>
+                        </StackPanel>
+                        
+                        <!-- Hire Chart -->
+                        <lvc:CartesianChart LegendLocation="None" Margin="0 50 0 0">
+                            <lvc:CartesianChart.DataTooltip>
+                                <lvc:DefaultTooltip Background="#101a28" Foreground="#d5e2ff" />
+                            </lvc:CartesianChart.DataTooltip>
+
+                            <lvc:CartesianChart.AxisX>
+                                <lvc:Axis Foreground="#bcc0c6" ShowLabels="True"
+                                          Labels="Direct, , , ,We War..., , , ,Linkedin, , , , Hired, , , ,Workin, , , , Instagram, , , , Referral...">
+                                    <lvc:Axis.Separator>
+                                        <lvc:Separator StrokeThickness="0" Step="4"/>
+                                    </lvc:Axis.Separator>
+                                </lvc:Axis>
+                            </lvc:CartesianChart.AxisX>
+
+                            <lvc:CartesianChart.AxisY>
+                                <lvc:Axis Foreground="#bcc0c6" ShowLabels="True"
+                                          MinValue="0"
+                                          MaxValue="100">
+                                    <lvc:Axis.Separator>
+                                        <lvc:Separator StrokeThickness="1" Stroke="#2c3a34"/>
+                                    </lvc:Axis.Separator>
+                                </lvc:Axis>
+                            </lvc:CartesianChart.AxisY>
+                            <lvc:CartesianChart.Series>
+                                <lvc:LineSeries StrokeThickness="2" 
+                                                Stroke="#6860e6"
+                                                PointGeometrySize="0"
+                                                Values="60, 50, 65, 66, 70, 43, 50, 
+                                                        45, 75, 70, 85, 73, 80,
+                                                        55, 83, 75, 80, 35, 55, 60,
+                                                        65, 70, 60, 65, 40, 42">
+                                    <lvc:LineSeries.Fill>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="#2e3966" Offset="0.4"/>
+                                            <GradientStop Color="#21304a" Offset="1.2"/>
+                                        </LinearGradientBrush>
+                                    </lvc:LineSeries.Fill>
+                                </lvc:LineSeries>
+                            </lvc:CartesianChart.Series>
+                        </lvc:CartesianChart>
+                        
+                    </Grid>
+                </Border>
+
+                <Border Style="{StaticResource mainBorder}" Grid.Column="1" Margin="0 0 30 30">
+                   
+                    <Grid>
+                        <!-- Title -->
+                        <TextBlock Text="Top Hiring Sources" Style="{StaticResource TitleText}"/>
+                        <!-- Filter Button -->
+                        <Button Style="{StaticResource TitleButton}" Margin="0 -3 0 0">
+                            <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource TopmenuIcon}"/>
+                        </Button>
+                        
+                        <!-- Country List View -->
+                        <ListView Margin="0 50 0 0" 
+                                  Background="Transparent" 
+                                  BorderThickness="0"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                                  ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                            <uc:Country CountryName="Comores" Flag="/Asset/icons/icons8-comoros-48.png" Price="$963.60" IsLevelUp="False"/>
+                            <uc:Country CountryName="Russe" Flag="/Asset/icons/icons8-russian-federation-48.png" Price="$19,584.23" IsLevelUp="True"/>
+                            <uc:Country CountryName="China" Flag="/Asset/icons/icons8-china-48.png" Price="$20,983.6" IsLevelUp="True"/>
+                            <uc:Country CountryName="Senegal" Flag="/Asset/icons/icons8-senegal-48.png" Price="$1,834.2" IsLevelUp="False"/>
+                            <uc:Country CountryName="Algeria" Flag="/Asset/icons/icons8-algeria-48.png" Price="$1,937.74" IsLevelUp="True"/>
+                        </ListView>
+                    </Grid>
+                </Border>
+                
+            </Grid>
+
+            <!-- Lefte Menu -->
+            <Border Grid.RowSpan="3" Grid.Column="2" Background="#1e2e44" CornerRadius="0 25 25 0">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" Opacity="0.2"/>
+                </Border.Effect>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="90"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <!-- User Connect -->
+                    <Border Margin="0 10 10 0" Padding="10 0 10 10" Background="#151f2d" CornerRadius="0 35 35 0">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="10" Opacity="0.7"/>
+                        </Border.Effect>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Orientation="Vertical" 
+                                        VerticalAlignment="Center" 
+                                        HorizontalAlignment="Center"
+                                        Margin="0 0 5 0">
+                                <TextBlock Text="Inzou" Style="{StaticResource TitleText}" FontSize="30" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Administrateur" Style="{StaticResource SecondaryText}" FontSize="20"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0 5 5 0">
+                                <Border Width="50"
+                                        Height="50" 
+                                        Padding="1" 
+                                        Background="White" 
+                                        CornerRadius="100">
+                                    <Ellipse>
+                                        <Ellipse.Fill>
+                                            <ImageBrush ImageSource="/asset/image/inzou.jpeg"/>
+                                        </Ellipse.Fill>
+                                    </Ellipse>
+                                </Border>
+                                <Border Width="22"
+                                        Height="22" 
+                                        Padding="1" 
+                                        Background="White"
+                                        CornerRadius="20"
+                                        VerticalAlignment="Top"
+                                        Margin="-13 15 0 0">
+                                    <Ellipse Width="20" 
+                                             Height="20"
+                                             VerticalAlignment="Center"
+                                             Fill="#009d00" 
+                                             HorizontalAlignment="Center"  
+                                             />
+                                </Border>
+
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+
+                    <Border Grid.Row="1" Margin="5 10 5 5" Background="#151f2d" Padding="10 0 10 10" CornerRadius="30">
+                        <StackPanel >
+                            <TextBlock Text="Membre abonné" Style="{StaticResource TitleText}" Margin="0 10 0 0"/>
+                            <!-- Info -->
+                            <uc:MembreControls Title="Razak Assadi" 
+                                     IsActive="True" 
+                                     UpPrice="1250 Fc" 
+                                     DownPrice="350 Fc" 
+                                     Image="/asset/icons/icons8-user-48.png"/>
+
+                            <uc:MembreControls Title="Moussa Abdou" 
+                                     IsActive="True" 
+                                     UpPrice="8100 Fc" 
+                                     DownPrice="125 Fc" 
+                                     Image="/asset/icons/icons8-user-48.png"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="2" Margin="5 3 5 5" Background="#151f2d" Padding="5 0 10 10" CornerRadius="30" >
+                        <StackPanel >
+                            <TextBlock Text="Message Membre" Style="{StaticResource TitleText}" Margin="5 10 0 5" />
+
+                            <uc:UserCard FullName="Moussa Abdou" Title="Je Veux en savoir Plus" Time="10 min ago" Image="/Asset/icons/icons8-user-48.png"/>
+                            <uc:UserCard FullName="Mounissa Ibrahime" Title="J'ai reçu Mes fichier." Time="22 min ago " Image="/Asset/icons/icons8-woman-60.png" IsActive="True"/>
+
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="3" Margin="5 3 5 5" Background="#151f2d" Padding="10 34 10 10" CornerRadius="30" >
+                        <Grid Height="auto" >
+                            <Border Height="30"
+                                    Width="30"
+                                    CornerRadius="20"
+                                    Background="#ccc"
+                                    Margin="0 -35 0 0"
+                                    Panel.ZIndex="2"
+                                    HorizontalAlignment="Left">
+                                <Icon:PackIconMaterial Kind="ChevronLeftCircle" 
+                                                       VerticalAlignment="Center"
+                                                       HorizontalAlignment="Center"/>
+                            </Border>
+                            <uc:InfUserCard Title="Meilleur Eleve" Desc="6 Retenue" Pourtcenrage="15%" Bottomtext="Divers Village" Days="2 days Left" Icon="School" Value="2" />
+                            <Border Height="30"
+                                    Width="30"
+                                    CornerRadius="20"
+                                    Background="#ccc"
+                                    Margin="0 -35 0 0"
+                                    Panel.ZIndex="2"
+                                    HorizontalAlignment="Right">
+                                <Icon:PackIconMaterial Kind="ChevronRightCircle" 
+                                                       VerticalAlignment="Center"
+                                                       HorizontalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+            <!-- And Lefte Menu -->
+
+
+        </Grid>
+    </Border>
+</Window>

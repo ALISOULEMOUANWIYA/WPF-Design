@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "afb0fafd-ddd6-4282-a4a3-8c31692aee11": {
+      "ProjectGuid": "afb0fafd-ddd6-4282-a4a3-8c31692aee11",
+      "DisplayName": "Recrutement Dashboard",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

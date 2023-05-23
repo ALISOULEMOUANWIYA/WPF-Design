@@ -1,0 +1,6 @@
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlConsole1\bin\Debug\ControlConsole1.exe.config
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlConsole1\bin\Debug\ControlConsole1.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlConsole1\bin\Debug\ControlConsole1.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlConsole1\obj\Debug\ControlConsole1.csproj.CoreCompileInputs.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlConsole1\obj\Debug\ControlConsole1.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\ControlConsole1\obj\Debug\ControlConsole1.pdb

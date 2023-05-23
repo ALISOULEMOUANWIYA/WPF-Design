@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="ResponsiveApp.UserControls.LiveCharLine"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             Name="liveCharLine">
+    <Border Style="{StaticResource mainBorder}" >
+        <Grid>
+            <!-- Title -->
+            <TextBlock Text="Estimation instantané" Style="{StaticResource TitleText}" FontSize="15"/>
+            <!-- Filter Button -->
+            <Button Style="{StaticResource TitleButton}" >
+                <Icon:PackIconMaterial Kind="Tune" Style="{StaticResource TopmenuIcon}"/>
+            </Button>
+
+            <!-- Hire Chart-->
+            <lvc:CartesianChart Grid.Row="1" 
+                                        Margin="0 23 0 10" 
+                                        LegendLocation="None">
+                <lvc:CartesianChart.DataTooltip>
+                    <lvc:DefaultTooltip Background="Red" 
+                                                Foreground="#ffffff"
+                                                BulletSize="10"
+                                                Opacity="0.7"
+                                                />
+                </lvc:CartesianChart.DataTooltip>
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis Foreground="#90a3b2" ShowLabels="True">
+                        <lvc:Axis.Separator>
+                            <lvc:Separator StrokeThickness="0"
+                                                   Step="2"/>
+                        </lvc:Axis.Separator>
+                    </lvc:Axis>
+                </lvc:CartesianChart.AxisX>
+
+                <lvc:CartesianChart.AxisY>
+                    <lvc:Axis Foreground="#90a3b2" ShowLabels="True" MinValue="40" MaxValue="350">
+                        <lvc:Axis.Separator>
+                            <lvc:Separator StrokeThickness="0"/>
+                        </lvc:Axis.Separator>
+                    </lvc:Axis>
+                </lvc:CartesianChart.AxisY>
+
+                <lvc:CartesianChart.Series>
+                    <lvc:LineSeries Fill="Transparent" 
+                                            StrokeThickness="3" 
+                                            PointGeometrySize="0"
+                                            Values="50, 120, 110, 160, 150, 180, 120, 170, 165, 180">
+                        <lvc:LineSeries.Stroke>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#ffffff" Offset="0.06"/>
+                                <GradientStop Color="#2889fc" Offset="0.5"/>
+                                <GradientStop Color="#ffffff" Offset="0.93"/>
+                            </LinearGradientBrush>
+                        </lvc:LineSeries.Stroke>
+                    </lvc:LineSeries>
+
+                    <lvc:LineSeries Fill="Transparent" 
+                                            StrokeThickness="3" 
+                                            PointGeometrySize="0"
+                                            Values="170, 240, 200, 220, 220, 270, 200, 220, 240">
+                        <lvc:LineSeries.Stroke>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#ffffff" Offset="0.06"/>
+                                <GradientStop Color="#fe6c47" Offset="0.5"/>
+                                <GradientStop Color="#ffffff" Offset="0.9"/>
+                            </LinearGradientBrush>
+                        </lvc:LineSeries.Stroke>
+                    </lvc:LineSeries>
+
+                    <lvc:LineSeries Fill="Transparent" 
+                                            StrokeThickness="3" 
+                                            PointGeometrySize="0"
+                                            Values="110, 210, 100, 120, 220, 270, 111, 90, 140">
+                        <lvc:LineSeries.Stroke>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#ffffff" Offset="0.06"/>
+                                <GradientStop Color="#FFFF00" Offset="0.5"/>
+                                <GradientStop Color="#ffffff" Offset="0.9"/>
+                            </LinearGradientBrush>
+                        </lvc:LineSeries.Stroke>
+                    </lvc:LineSeries>
+                </lvc:CartesianChart.Series>
+
+            </lvc:CartesianChart>
+
+            <!-- Legends -->
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                                    Margin="0 0 0 0">
+                <Border Width="12" Height="12" Background="#7166f9" CornerRadius="3"/>
+                <TextBlock Text="SIM" VerticalAlignment="Center" Margin="7 0 20 0" Foreground="#d4d6d9"/>
+
+                <Border Width="12" Height="12" Background="#DC143C" CornerRadius="3"/>
+                <TextBlock Text="Télèphone" VerticalAlignment="Center" Margin="7 0 20 0" Foreground="#d4d6d9"/>
+
+                <Border Width="12" Height="12" Background="#FFFF00" CornerRadius="3"/>
+                <TextBlock Text="Crédit" VerticalAlignment="Center" Margin="7 0 20 0" Foreground="#d4d6d9"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

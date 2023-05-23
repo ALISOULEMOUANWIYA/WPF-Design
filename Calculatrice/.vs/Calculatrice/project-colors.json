@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c64c03c3-20e0-47d6-9d54-475d1d7db258": {
+      "ProjectGuid": "c64c03c3-20e0-47d6-9d54-475d1d7db258",
+      "DisplayName": "Calculatrice",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

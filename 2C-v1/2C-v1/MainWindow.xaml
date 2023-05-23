@@ -1,0 +1,1120 @@
+﻿<Window x:Class="_2C_v1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        xmlns:svg="http://sharpvectors.codeplex.com/svgc/"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:_2C_v1"
+        Title="MainWindow"
+        MinWidth="1080"
+        MinHeight="720"
+        Height="720"
+        Width="1280"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        x:Name="mainWindow">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+    </Window.Resources>
+    <Border>
+        <Grid>
+            <!-- Redimentionnement du fenetre -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <!-- And Redimentionnement du fenetre -->
+
+            <Border Grid.Row="0"
+                    CornerRadius="30">
+                <!--Background="#1e2e44"-->
+                <Border.Background >
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Color="#362d2d" Offset="0"/>
+                        <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                        <GradientStop Color="#1e2e44" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+                </Border.Effect>
+                <Grid>
+                    <!-- Redimentionnement du fenetre -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60" />
+                    </Grid.RowDefinitions>
+                    <!-- And Redimentionnement du fenetre -->
+                    <StackPanel Margin="20 0 0 0" Orientation="Horizontal" HorizontalAlignment="Center" >
+                        <!-- Tab Button controller Window -->
+                        <Button Style="{StaticResource topButtonQuitter}" 
+                            Click="Quitter_Click">
+                            <Ellipse Width="8" Height="8" Fill="#eb1700"/>
+                        </Button>
+
+                        <Button Style="{StaticResource topButtonGrandir}" 
+                            Click="Grandir_Click_1">
+                            <Ellipse Width="8" Height="8" Fill="#ffaf01" Margin="7 0"/>
+                        </Button>
+
+                        <Button Style="{StaticResource topButtonReduire}" 
+                            Click="Reduir_Click_2">
+                            <Ellipse Width="8" Height="8" Fill="#009d00"/>
+                        </Button>
+                        <!-- And Tab Button controller Window -->
+                        <Border Width="30"
+                                Height="30" 
+                                Padding="2"
+                                Background="#009d00" 
+                                CornerRadius="100"
+                                Margin="10 0 10 0">
+                            <Ellipse>
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="/asset/icons/btn_flottant1.png"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+
+                        </Border>
+                        <TextBlock Text="2CM" 
+                                   TextAlignment="Center" 
+                                   Foreground="#009d00" 
+                                   FontWeight="Bold" 
+                                   FontSize="15" 
+                                   Margin="0 20 10 20"/>
+
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Margin="20 0 0 0" Orientation="Horizontal" HorizontalAlignment="Left" >
+                        <!-- Tab Button controller Window -->
+                        <Button Style="{StaticResource MenuBtn}"  >
+                            <Button.Content >
+                                <Label fa:Awesome.Content="Comment" FontSize="20"
+                                       Foreground="White"
+                                       Width="30" Height="30" />
+                            </Button.Content>
+                        </Button>
+
+                        <Button Style="{StaticResource MenuBtn}">
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/statusIcon.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+
+                        <Button Style="{StaticResource MenuBtn}" >
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/viewswapetop1.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+                        <Button Style="{StaticResource MenuBtn}" >
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/storefront1.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+                        <Button Style="{StaticResource MenuBtn}" >
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/subscriptions1.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+                        <Button Style="{StaticResource MenuBtn}" >
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/Newspaper1.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+                        <Button Style="{StaticResource MenuBtn}" >
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/image1.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+                        <!-- And Tab Button controller Window -->
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Margin="0 0 0 0" Orientation="Horizontal" HorizontalAlignment="Right" >
+                        <!-- Tab Button controller Window -->
+                        <Grid Margin="0 15 0 15" Width="250">
+                            
+                            <TextBlock Margin="40 0 15 0"
+                               VerticalAlignment="Center"
+                               Foreground="#fff"
+                               Panel.ZIndex="1"
+                               Text="search ..."
+                               IsHitTestVisible="False"
+                               Visibility="{Binding ElementName=textBoxSearch, Converter={StaticResource BoolToVis}}"/>
+                            <TextBox x:Name="textBoxSearch" Style="{StaticResource SearchTextBox}"/>
+
+                            <Icon:PackIconMaterial Kind="Magnify"
+                                           Width="15"
+                                           Height="15"
+                                                   Foreground="#F0E68C"
+                                                   Margin="0 0 15 0"
+                                                   HorizontalAlignment="Right"
+                                                   VerticalAlignment="Center"
+                                                   />
+                        </Grid>
+                        <Button Style="{StaticResource MenuBtn}" >
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/image1.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+                        <!-- And Tab Button controller Window -->
+
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="1" 
+                    Grid.RowSpan="2" 
+                    MouseDown="Border_MouseDown"
+                    MouseLeftButtonDown="Border_MouseLeftButtonDown">
+                <Grid>
+                    <!-- Redimentionnement du fenetre -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="50" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <!-- And Redimentionnement du fenetre -->
+                    <Border CornerRadius="0"  
+                            Grid.RowSpan="3">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+                        </Border.Effect>
+                        <Grid>
+                            <StackPanel VerticalAlignment="Center" 
+                                        Orientation="Vertical" 
+                                        HorizontalAlignment="Right" Width="50" >
+                                <!-- Tab Button controller Window -->
+                                <Border Style="{StaticResource menuBarLeft}" >
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="0"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/Menu1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <!-- And Tab Button controller Window -->
+                            </StackPanel>
+                        </Grid>
+                    </Border >
+                    <Border Grid.RowSpan="4" 
+                            Grid.Column="1"
+                            Background="#151f2d"
+                            BorderBrush="#009d00"
+                            BorderThickness="0 0 0 4"
+                            CornerRadius="0,0,8,8">
+                        <Grid>
+                            <!-- Redimentionnement du fenetre -->
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="4" />
+                                <ColumnDefinition Width="350" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="4" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!-- And Redimentionnement du fenetre -->
+                            <Border Grid.RowSpan="3"
+                                    BorderBrush="#000000"
+                                    BorderThickness="4 0 0 0">
+                            </Border>
+
+                            <Border Grid.Column="1"
+                                    Grid.RowSpan="3"
+                                    BorderBrush="#ccc"
+                                    BorderThickness="0 0 1 0">
+                                
+                                <Grid >
+                                    <!-- Redimentionnement du fenetre -->
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto" />
+                                        <RowDefinition Height="auto" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="auto" />
+                                    </Grid.RowDefinitions>
+                                    <!-- And Redimentionnement du fenetre -->
+                                    <Border >
+                                        <Border.Background >
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Color="#000" Offset="0"/>
+                                                <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                                <GradientStop Color="#1e2e44" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Border.Background>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <StackPanel Margin="10 0 0 0" 
+                                                    Orientation="Horizontal" 
+                                                    HorizontalAlignment="Left">
+
+                                                <Border Width="40"
+                                                    Height="40" 
+                                                    Padding="2"
+                                                    Background="#009d00" 
+                                                    CornerRadius="100"
+                                                    Margin="10 0 10 0">
+                                                    <svg:SvgViewbox Source="Asset/icons/noPic.svg" Style="{StaticResource SvgStyle}" 
+                                                                    Width="35"
+                                                                    Height="35" />
+                                                </Border>
+                                                <TextBlock Text="ALI SOULE" 
+                                                       TextAlignment="Center" 
+                                                       Foreground="#009d00" 
+                                                       FontWeight="Bold" 
+                                                       FontSize="24" 
+                                                       Margin="0 20 10 20"/>
+                                            </StackPanel>
+                                            <StackPanel Grid.Column="1" Margin="10 0 0 0" 
+                                                    Orientation="Horizontal" 
+                                                    HorizontalAlignment="Right" >
+                                                <!-- Tab Button controller Window -->
+                                                <Button Style="{StaticResource MenuBtnSideBar}" >
+                                                    <svg:SvgViewbox Source="Asset/icons/wifi_open1.svg" Style="{StaticResource SvgStyle}" />
+                                                </Button>
+
+                                                <Button Style="{StaticResource MenuBtnSideBar}" >
+                                                    <svg:SvgViewbox Source="Asset/icons/archive1.svg" Style="{StaticResource SvgStyle}" />
+                                                </Button>
+
+                                                <Button Style="{StaticResource MenuBtnSideBar}" >
+                                                    <svg:SvgViewbox Source="Asset/icons/moreVertIcon.svg" Style="{StaticResource SvgStyle}" />
+                                                </Button>
+                                                <!-- And Tab Button controller Window -->
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+
+                                    <Border Grid.Row="1"
+                                            BorderBrush="#ccc"
+                                            BorderThickness="0 0 0 1">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="auto" />
+                                                <ColumnDefinition Width="auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <StackPanel Margin="13 0 0 0" 
+                                                    Orientation="Horizontal" 
+                                                    HorizontalAlignment="Left">
+
+                                                <Grid Margin="0 10 0 15" Width="250">
+                                                    <svg:SvgViewbox Source="Asset/icons/LoadingSearche1.svg" 
+                                                                    Style="{StaticResource SvgStyle}"
+                                                                    HorizontalAlignment="Left"
+                                                                    VerticalAlignment="Center"
+                                                                    Margin="10 0 0 0"
+                                                                    Panel.ZIndex="5"/>
+                                                    <TextBlock Margin="40 0 15 0"
+                                                               VerticalAlignment="Center"
+                                                               Foreground="#fff"
+                                                               Panel.ZIndex="1"
+                                                               Text="search ..."
+                                                               IsHitTestVisible="False"
+                                                               Visibility="{Binding ElementName=textBoxSearch,  Converter={StaticResource BoolToVis}}"/>
+                                                    <TextBox x:Name="textBoxSearchMessage" Style="{StaticResource SearchTextBox}"/>
+
+                                                    <Icon:PackIconMaterial Kind="Magnify"
+                                                                           Width="15"
+                                                                           Height="15"
+                                                                           Foreground="#F0E68C"
+                                                                           Margin="0 0 15 0"
+                                                                           HorizontalAlignment="Right"
+                                                                           VerticalAlignment="Center"
+                                                                                />
+                                                </Grid>
+                                            </StackPanel>
+                                            <StackPanel Grid.Column="1"  
+                                                    Orientation="Horizontal" 
+                                                    HorizontalAlignment="Center"
+                                                        Margin="5 0 0 0">
+                                                <!-- Tab Button controller Window -->
+                                                <Button Style="{StaticResource topButtonQuitter}" >
+                                                    <svg:SvgViewbox Source="Asset/icons/FilterDiscution1.svg" Style="{StaticResource SvgStyle}" />
+                                                </Button>
+
+                                                <Button Style="{StaticResource topButtonGrandir}" Margin="5 0 0 0">
+                                                    <svg:SvgViewbox Source="Asset/icons/HistoryRecherche1.svg" Style="{StaticResource SvgStyle}" />
+                                                </Button>
+
+                                                <!-- And Tab Button controller Window -->
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+
+                                    <Border Grid.Row="2"
+                                            Grid.RowSpan="2">
+                                        <Border.Background >
+                                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                <GradientStop Color="#000" Offset="0"/>
+                                                <GradientStop Color="#000" Offset="0.5"/>
+                                                <GradientStop Color="#1f1d1D" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Border.Background>
+                                        <StackPanel  Margin="0 0 0 0" 
+                                                    Orientation="Vertical" 
+                                                    HorizontalAlignment="Left"
+                                                     Width="345">
+                                            
+                                            <Border CornerRadius="0 0 20 20">
+                                                <Border.Background >
+                                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                        <GradientStop Color="#000" Offset="0"/>
+                                                        <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                                        <GradientStop Color="#1e2e44" Offset="1"/>
+                                                    </LinearGradientBrush>
+                                                </Border.Background>
+                                                <StackPanel  Margin="0 0 0 0" 
+                                                         Orientation="Horizontal" 
+                                                         HorizontalAlignment="Center">
+                                                
+                                                <Grid>
+                                                    <!-- Redimentionnement du fenetre -->
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="auto" />
+                                                        <ColumnDefinition Width="auto" />
+                                                    </Grid.ColumnDefinitions>
+                                                    <!-- And Redimentionnement du fenetre -->
+                                                    <Border Grid.ColumnSpan="2" Width="40"
+                                                        Height="40" 
+                                                        Padding="2"
+                                                        Background="#009d00" 
+                                                        CornerRadius="100"
+                                                        Margin="10 0 10 0">
+                                                        <svg:SvgViewbox Source="Asset/icons/noPic.svg" Style="{StaticResource SvgStyle}" 
+                                                                        Width="35"
+                                                                        Height="35" />
+                                                    </Border>
+                                                    <Border Grid.Column="1" 
+                                                            Width="25"
+                                                            Height="25" 
+                                                            Padding="2"
+                                                            VerticalAlignment="Bottom"
+                                                            HorizontalAlignment="Right"
+                                                            CornerRadius="100"
+                                                            Margin="0 0 3 15">
+                                                            <Border.Background >
+                                                                <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                                                    <GradientStop Color="#362d2d" Offset="0"/>
+                                                                    <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                                                    <GradientStop Color="#1e2e44" Offset="1"/>
+                                                                </LinearGradientBrush>
+                                                            </Border.Background>
+                                                            <TextBlock Text="999"
+                                                                       HorizontalAlignment="Center"
+                                                                       VerticalAlignment="Center"
+                                                                   TextAlignment="Center" 
+                                                                   Foreground="#fff" 
+                                                                   FontWeight="Bold" 
+                                                                   FontSize="10" />
+                                                    </Border>
+                                                </Grid>
+                                                <StackPanel  Margin="0 0 0 0" 
+                                                             Orientation="Vertical" 
+                                                             HorizontalAlignment="Left"
+                                                             Width="230">
+                                                    <TextBlock Text="ALI SOULE"
+                                                               HorizontalAlignment="Left"
+                                                               Foreground="#fff" 
+                                                               FontWeight="Bold" 
+                                                               FontSize="20" 
+                                                               Margin="10 10 0 0"/>
+                                                    <StackPanel Margin="0 0 0 0" 
+                                                                Orientation="Horizontal" 
+                                                                HorizontalAlignment="Left">
+                                                        <svg:SvgViewbox Source="Asset/icons/doubleTick.svg" Style="{StaticResource SvgStyle}" 
+                                                                        Width="20"
+                                                                        Height="20"
+                                                                        Margin="5 0 5 0" />
+                                                        <TextBlock Text="ALI SOULE" 
+                                                                   TextAlignment="Center" 
+                                                                   Foreground="#ccc" 
+                                                                   FontWeight="Bold" 
+                                                                   FontSize="18" 
+                                                                   Margin="0 5 0 10"/>
+                                                    </StackPanel>
+
+                                                </StackPanel>
+                                                <StackPanel Margin="0 0 0 0" 
+                                                            Orientation="Vertical" 
+                                                            VerticalAlignment="Center"
+                                                            HorizontalAlignment="Center">
+                                                    <TextBlock Text="2min" 
+                                                               TextAlignment="Center" 
+                                                               Foreground="#fff" 
+                                                               FontWeight="Bold" 
+                                                               FontSize="11" 
+                                                               Margin="0 10 0 0"/>
+                                                    
+                                                    <StackPanel Margin="0 1 0 1" 
+                                                                Orientation="Horizontal" 
+                                                                HorizontalAlignment="Right">
+                                                        <Grid>
+                                                            <!-- Redimentionnement du fenetre -->
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="auto" />
+                                                                <ColumnDefinition Width="auto" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <!-- And Redimentionnement du fenetre -->
+                                                            
+                                                            <svg:SvgViewbox  Grid.ColumnSpan="2" 
+                                                                             Source="Asset/icons/UserEnLigne1.svg" 
+                                                                             Style="{StaticResource SvgStyle}" 
+                                                                             VerticalAlignment="Center"
+                                                                             HorizontalAlignment="Center"
+                                                                             Width="12"
+                                                                             Height="12"
+                                                                             Margin="-23 0 3 0"/>
+                                                            <Border Grid.Column="1" 
+                                                                    Width="25"
+                                                                    Height="25" 
+                                                                    Padding="2"
+                                                                    VerticalAlignment="Center"
+                                                                    HorizontalAlignment="Left"
+                                                                    CornerRadius="100"
+                                                                    Margin="-50 0 3 0">
+                                                                <Border.Background >
+                                                                    <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                                                        <GradientStop Color="#362d2d" Offset="1"/>
+                                                                        <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                                                        <GradientStop Color="#1e2e44" Offset="0"/>
+                                                                    </LinearGradientBrush>
+                                                                </Border.Background>
+                                                                <TextBlock Text="999"
+                                                                           HorizontalAlignment="Center"
+                                                                           VerticalAlignment="Center"
+                                                                           TextAlignment="Center" 
+                                                                           Foreground="#fff" 
+                                                                           FontWeight="Bold" 
+                                                                           FontSize="10" />
+                                                            </Border>
+                                                        </Grid>
+                                                    </StackPanel>
+                                                    <svg:SvgViewbox  Grid.ColumnSpan="2" 
+                                                                             Source="Asset/icons/person_off1.svg" 
+                                                                             Style="{StaticResource SvgStyle}" 
+                                                                             Width="12"
+                                                                             Height="12" />
+                                                </StackPanel>
+
+                                            </StackPanel>
+                                            </Border>
+
+                                            <Border CornerRadius="0 0 20 20">
+                                                <Border.Background >
+                                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                                        <GradientStop Color="#000" Offset="0"/>
+                                                        <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                                        <GradientStop Color="#1e2e44" Offset="1"/>
+                                                    </LinearGradientBrush>
+                                                </Border.Background>
+                                                <StackPanel  Margin="0 0 0 0" 
+                                                         Orientation="Horizontal" 
+                                                         HorizontalAlignment="Center">
+
+                                                    <Grid>
+                                                        <!-- Redimentionnement du fenetre -->
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="auto" />
+                                                            <ColumnDefinition Width="auto" />
+                                                        </Grid.ColumnDefinitions>
+                                                        <!-- And Redimentionnement du fenetre -->
+                                                        <Border Grid.ColumnSpan="2" Width="40"
+                                                        Height="40" 
+                                                        Padding="2"
+                                                        Background="#009d00" 
+                                                        CornerRadius="100"
+                                                        Margin="10 0 10 0">
+                                                            <svg:SvgViewbox Source="Asset/icons/noPic.svg" Style="{StaticResource SvgStyle}" 
+                                                                        Width="35"
+                                                                        Height="35" />
+                                                        </Border>
+                                                        <Border Grid.Column="1" 
+                                                            Width="25"
+                                                            Height="25" 
+                                                            Padding="2"
+                                                            VerticalAlignment="Bottom"
+                                                            HorizontalAlignment="Right"
+                                                            CornerRadius="100"
+                                                            Margin="0 0 3 15">
+                                                            <Border.Background >
+                                                                <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                                                    <GradientStop Color="#362d2d" Offset="0"/>
+                                                                    <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                                                    <GradientStop Color="#1e2e44" Offset="1"/>
+                                                                </LinearGradientBrush>
+                                                            </Border.Background>
+                                                            <TextBlock Text="999"
+                                                                       HorizontalAlignment="Center"
+                                                                       VerticalAlignment="Center"
+                                                                   TextAlignment="Center" 
+                                                                   Foreground="#fff" 
+                                                                   FontWeight="Bold" 
+                                                                   FontSize="10" />
+                                                        </Border>
+                                                    </Grid>
+                                                    <StackPanel  Margin="0 0 0 0" 
+                                                             Orientation="Vertical" 
+                                                             HorizontalAlignment="Left"
+                                                             Width="230">
+                                                        <TextBlock Text="ALI SOULE"
+                                                               HorizontalAlignment="Left"
+                                                               Foreground="#fff" 
+                                                               FontWeight="Bold" 
+                                                               FontSize="20" 
+                                                               Margin="10 10 0 0"/>
+                                                        <StackPanel Margin="0 0 0 0" 
+                                                                Orientation="Horizontal" 
+                                                                HorizontalAlignment="Left">
+                                                            <svg:SvgViewbox Source="Asset/icons/doubleTick.svg" Style="{StaticResource SvgStyle}" 
+                                                                        Width="20"
+                                                                        Height="20"
+                                                                        Margin="5 0 5 0" />
+                                                            <TextBlock Text="ALI SOULE" 
+                                                                   TextAlignment="Center" 
+                                                                   Foreground="#ccc" 
+                                                                   FontWeight="Bold" 
+                                                                   FontSize="18" 
+                                                                   Margin="0 5 0 10"/>
+                                                        </StackPanel>
+
+                                                    </StackPanel>
+                                                    <StackPanel Margin="0 0 0 0" 
+                                                            Orientation="Vertical" 
+                                                            VerticalAlignment="Center"
+                                                            HorizontalAlignment="Center">
+                                                        <TextBlock Text="2min" 
+                                                               TextAlignment="Center" 
+                                                               Foreground="#fff" 
+                                                               FontWeight="Bold" 
+                                                               FontSize="11" 
+                                                               Margin="0 10 0 0"/>
+
+                                                        <StackPanel Margin="0 1 0 1" 
+                                                                Orientation="Horizontal" 
+                                                                HorizontalAlignment="Right">
+                                                            <Grid>
+                                                                <!-- Redimentionnement du fenetre -->
+                                                                <Grid.ColumnDefinitions>
+                                                                    <ColumnDefinition Width="auto" />
+                                                                    <ColumnDefinition Width="auto" />
+                                                                </Grid.ColumnDefinitions>
+                                                                <!-- And Redimentionnement du fenetre -->
+
+                                                                <svg:SvgViewbox  Grid.ColumnSpan="2" 
+                                                                             Source="Asset/icons/UserEnLigne1.svg" 
+                                                                             Style="{StaticResource SvgStyle}" 
+                                                                             VerticalAlignment="Center"
+                                                                             HorizontalAlignment="Center"
+                                                                             Width="12"
+                                                                             Height="12"
+                                                                             Margin="-23 0 3 0"/>
+                                                                <Border Grid.Column="1" 
+                                                                    Width="25"
+                                                                    Height="25" 
+                                                                    Padding="2"
+                                                                    VerticalAlignment="Center"
+                                                                    HorizontalAlignment="Left"
+                                                                    CornerRadius="100"
+                                                                    Margin="-50 0 3 0">
+                                                                    <Border.Background >
+                                                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                                                        </LinearGradientBrush>
+                                                                    </Border.Background>
+                                                                    <TextBlock Text="999"
+                                                                           HorizontalAlignment="Center"
+                                                                           VerticalAlignment="Center"
+                                                                           TextAlignment="Center" 
+                                                                           Foreground="#fff" 
+                                                                           FontWeight="Bold" 
+                                                                           FontSize="10" />
+                                                                </Border>
+                                                            </Grid>
+                                                        </StackPanel>
+                                                        <svg:SvgViewbox  Grid.ColumnSpan="2" 
+                                                                             Source="Asset/icons/person_off1.svg" 
+                                                                             Style="{StaticResource SvgStyle}" 
+                                                                             Width="12"
+                                                                             Height="12" />
+                                                    </StackPanel>
+
+                                                </StackPanel>
+                                            </Border>
+
+                                        </StackPanel>
+                                    </Border>
+                                    
+                                    <Grid Grid.Row="3"
+                                          Width="40"
+                                          HorizontalAlignment="Right"
+                                          VerticalAlignment="Top"
+                                          Margin="0 0 30 30">
+                                        <!-- Redimentionnement du fenetre -->
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto" />
+                                            <RowDefinition Height="auto" />
+                                            <RowDefinition Height="auto" />
+                                            <RowDefinition Height="auto" />
+                                            <RowDefinition Height="auto" />
+                                        </Grid.RowDefinitions>
+                                        <!-- And Redimentionnement du fenetre -->
+                                        <Border Grid.Row="0"
+                                                Grid.RowSpan="2"
+                                                Panel.ZIndex="3"
+                                                BorderBrush="#009d00"
+                                                BorderThickness="0 0 0 4"
+                                                Background="#1e2e44" 
+                                                CornerRadius="30"
+                                                Width="40"
+                                                Height="40"
+                                                Margin="0 0 0 -40">
+                                            <Border.Effect>
+                                                <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+                                            </Border.Effect>
+                                            <Grid>
+                                                <!-- And Redimentionnement du fenetre -->
+                                                <StackPanel  Orientation="Horizontal" 
+                                                         HorizontalAlignment="Center" >
+                                                    <!-- Tab Button controller Window -->
+
+                                                    <Button Style="{StaticResource MenuBtn}">
+                                                        <Button.Content >
+                                                            <svg:SvgViewbox Source="Asset/icons/ide1.svg" Style="{StaticResource SvgStyle}"/>
+                                                        </Button.Content>
+                                                    </Button>
+                                                    <!-- And Tab Button controller Window -->
+
+                                                </StackPanel>
+
+                                            </Grid>
+                                        </Border>
+
+                                        <Border Grid.Row="1"
+                                                Grid.RowSpan="2"
+                                                Panel.ZIndex="4"
+                                                BorderBrush="#009d00"
+                                                BorderThickness="0 0 0 4"
+                                                Background="#1e2e44" 
+                                                CornerRadius="30"
+                                                Width="40"
+                                                Height="40"
+                                                Margin="0 0 0 -40">
+                                            <Border.Effect>
+                                                <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+                                            </Border.Effect>
+                                            <Grid>
+                                                <!-- And Redimentionnement du fenetre -->
+                                                <StackPanel  Orientation="Horizontal" 
+                                                         HorizontalAlignment="Center" >
+                                                    <!-- Tab Button controller Window -->
+
+                                                    <Button Style="{StaticResource MenuBtn}">
+                                                        <Button.Content >
+                                                            <svg:SvgViewbox Source="Asset/icons/ide1.svg" Style="{StaticResource SvgStyle}"/>
+                                                        </Button.Content>
+                                                    </Button>
+                                                    <!-- And Tab Button controller Window -->
+
+                                                </StackPanel>
+
+                                            </Grid>
+                                        </Border>
+
+                                        <Border Grid.Row="2"
+                                                Grid.RowSpan="2"
+                                                Panel.ZIndex="5"
+                                                BorderBrush="#009d00"
+                                                BorderThickness="0 0 0 4"
+                                                Background="#1e2e44" 
+                                                CornerRadius="30"
+                                                Width="40"
+                                                Height="40"
+                                                Margin="0 0 0 -40">
+                                            <Border.Effect>
+                                                <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+                                            </Border.Effect>
+                                            <Grid>
+                                                <!-- And Redimentionnement du fenetre -->
+                                                <StackPanel  Orientation="Horizontal" 
+                                                         HorizontalAlignment="Center" >
+                                                    <!-- Tab Button controller Window -->
+
+                                                    <Button Style="{StaticResource MenuBtn}">
+                                                        <Button.Content >
+                                                            <svg:SvgViewbox Source="Asset/icons/ide1.svg" Style="{StaticResource SvgStyle}"/>
+                                                        </Button.Content>
+                                                    </Button>
+                                                    <!-- And Tab Button controller Window -->
+
+                                                </StackPanel>
+
+                                            </Grid>
+                                        </Border>
+
+                                        <Border Grid.Row="3"
+                                                Grid.RowSpan="2"
+                                                Panel.ZIndex="6"
+                                                BorderBrush="#009d00"
+                                                BorderThickness="0 0 0 4"
+                                                Background="#1e2e44" 
+                                                CornerRadius="30"
+                                                Width="40"
+                                                Height="40"
+                                                Margin="0 0 0 -5">
+                                            <Border.Effect>
+                                                <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+                                            </Border.Effect>
+                                            <Grid>
+                                                <!-- And Redimentionnement du fenetre -->
+                                                <StackPanel  Orientation="Horizontal" 
+                                                         HorizontalAlignment="Center" >
+                                                    <!-- Tab Button controller Window -->
+
+                                                    <Button Style="{StaticResource MenuBtn}">
+                                                        <Button.Content >
+                                                            <svg:SvgViewbox Source="Asset/icons/ide1.svg" Style="{StaticResource SvgStyle}"/>
+                                                        </Button.Content>
+                                                    </Button>
+                                                    <!-- And Tab Button controller Window -->
+
+                                                </StackPanel>
+
+                                            </Grid>
+                                        </Border>
+
+                                        <Border Grid.Row="4"
+                                                Grid.RowSpan="2"
+                                                Panel.ZIndex="7"
+                                                BorderBrush="#009d00"
+                                                BorderThickness="0 0 0 4"
+                                                Background="#1e2e44" 
+                                                CornerRadius="30"
+                                                Width="40"
+                                                Height="40"
+                                                Margin="0 0 0 -1">
+                                            <Border.Effect>
+                                                <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+                                            </Border.Effect>
+                                            <Grid>
+                                                <!-- And Redimentionnement du fenetre -->
+                                                <StackPanel  Orientation="Horizontal" 
+                                                         HorizontalAlignment="Center" >
+                                                    <!-- Tab Button controller Window -->
+
+                                                    <Button Style="{StaticResource MenuBtn}">
+                                                        <Button.Content >
+                                                            <svg:SvgViewbox Source="Asset/icons/ide1.svg" Style="{StaticResource SvgStyle}"/>
+                                                        </Button.Content>
+                                                    </Button>
+                                                    <!-- And Tab Button controller Window -->
+
+                                                </StackPanel>
+
+                                            </Grid>
+                                        </Border>
+                                        <Border Grid.Row="5"
+                                                Panel.ZIndex="8"
+                                                BorderBrush="#009d00"
+                                                BorderThickness="0 0 0 4"
+                                                Background="#FFF" 
+                                                CornerRadius="30"
+                                                Width="40"
+                                                Height="40"
+                                               MouseEnter="BorderRotata_MouseEnter" >
+                                            <Border.Effect>
+                                                <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+                                            </Border.Effect>
+                                            <Grid>
+                                                <!-- And Redimentionnement du fenetre -->
+                                                <StackPanel  Orientation="Horizontal" 
+                                                         HorizontalAlignment="Center" >
+                                                    <!-- Tab Button controller Window -->
+
+                                                    <Button Style="{StaticResource MenuBtn}" Click="Flotting_Click">
+                                                        <Button.Content >
+                                                            <svg:SvgViewbox Source="Asset/icons/ide1.svg" Style="{StaticResource SvgStyle}"/>
+                                                        </Button.Content>
+                                                    </Button>
+                                                    <!-- And Tab Button controller Window -->
+
+                                                </StackPanel>
+
+                                            </Grid>
+                                        </Border>
+
+                                    </Grid>
+
+
+                                </Grid>
+                                
+                            </Border>
+
+
+                            <Border Grid.Column="3" Grid.RowSpan="3"
+                            BorderBrush="#000000"
+                            BorderThickness="4 0 0 0">
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <Border CornerRadius="0"
+                            Grid.RowSpan="3"
+                            Grid.Column="2">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+                        </Border.Effect>
+                        <Grid>
+                            <StackPanel VerticalAlignment="Center" 
+                                        Orientation="Vertical" 
+                                        HorizontalAlignment="Right" Width="50">
+                                <!-- Tab Button controller Window -->
+                                <Border Style="{StaticResource menuBarRight}">
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/file1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <Border Style="{StaticResource menuBarRight}">
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/link1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <Border Style="{StaticResource menuBarRight}">
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/share1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <Border Style="{StaticResource menuBarRight}">
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/file_download1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <Border Style="{StaticResource menuBarRight}">
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/transform1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <Border Style="{StaticResource menuBarRight}">
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/localoffer1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <Border Style="{StaticResource menuBarRight}">
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/today1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <Border Style="{StaticResource menuBarRight}">
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/delete1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <Border Style="{StaticResource menuBarRight}">
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/contact1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <Border Style="{StaticResource menuBarRight}">
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/start1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <Border Style="{StaticResource menuBarRight}">
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/Searchbtn1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <Border Style="{StaticResource menuBarRight}">
+                                    <Border.Background >
+                                        <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                                            <GradientStop Color="#362d2d" Offset="1"/>
+                                            <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                                            <GradientStop Color="#1e2e44" Offset="0"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <svg:SvgViewbox Source="Asset/icons/settings1.svg" Style="{StaticResource SvgStyle}" />
+                                </Border>
+                                <!-- And Tab Button controller Window -->
+                            </StackPanel>
+                        </Grid>
+                    </Border >
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="2"
+                    Grid.RowSpan="2"
+                    Panel.ZIndex="3"
+                    BorderBrush="#009d00"
+                    BorderThickness="0 0 0 4"
+                    Background="#1e2e44" 
+                    CornerRadius="30"
+                    Width="40"
+                    Height="40"
+                    VerticalAlignment="Top"
+                    Margin="0 -36 0 0">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+                </Border.Effect>
+                <Grid>
+                    <!-- And Redimentionnement du fenetre -->
+                    <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center" >
+                        <!-- Tab Button controller Window -->
+
+                        <Button Style="{StaticResource MenuBtn}">
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/dashboard1.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+                        <!-- And Tab Button controller Window -->
+
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+            <Border Grid.Row="3"
+                    Panel.ZIndex="1" 
+                    CornerRadius="30">
+                <Border.Background >
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Color="#362d2d" Offset="1"/>
+                        <GradientStop Color="#1f1d1D" Offset="0.5"/>
+                        <GradientStop Color="#1e2e44" Offset="0"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" Opacity="0.5"/>
+                </Border.Effect>
+                <Grid>
+                    <!-- Redimentionnement du fenetre -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60" />
+                    </Grid.RowDefinitions>
+                    <!-- And Redimentionnement du fenetre -->
+                    <StackPanel Grid.Column="1" Margin="20 0 0 0" Orientation="Horizontal" HorizontalAlignment="Center" >
+                        <!-- Tab Button controller Window -->
+                        <Button Style="{StaticResource MenuBtn}"  >
+                            <Button.Content >
+                                <Label fa:Awesome.Content="Comment" FontSize="20"
+                                       Foreground="White"
+                                       Width="30" Height="30" />
+                            </Button.Content>
+                        </Button>
+
+                        <Button Style="{StaticResource MenuBtn}">
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/statusIcon.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+
+                        <Button Style="{StaticResource MenuBtn}" >
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/viewswapetop1.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+                        <Button Style="{StaticResource MenuBtn}" >
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/storefront1.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+                        <Button Style="{StaticResource MenuBtn}" >
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/subscriptions1.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+                        <Button Style="{StaticResource MenuBtn}" >
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/Newspaper1.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+                        <Button Style="{StaticResource MenuBtn}" >
+                            <Button.Content >
+                                <svg:SvgViewbox Source="Asset/icons/image1.svg" Style="{StaticResource SvgStyle}"/>
+                            </Button.Content>
+                        </Button>
+                        <!-- And Tab Button controller Window -->
+
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Window>

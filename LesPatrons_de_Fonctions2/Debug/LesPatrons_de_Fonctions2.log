@@ -1,0 +1,17 @@
+﻿  LesPatrons_de_Fonctions2.cpp
+C:\Users\MOUANWIYA Ali Soule\source\repos\LesPatrons_de_Fonctions2\LesPatrons_de_Fonctions2.cpp(7,18): warning C4244: 'return' : conversion de 'U' en 'T', perte possible de données
+          with
+          [
+              U=double
+          ]
+          and
+          [
+              T=int
+          ]
+C:\Users\MOUANWIYA Ali Soule\source\repos\LesPatrons_de_Fonctions2\LesPatrons_de_Fonctions2.cpp(14): message : voir la référence à l'instanciation de la fonction modèle 'T somme<int,double>(T,U,int)' en cours de compilation
+          with
+          [
+              T=int,
+              U=double
+          ]
+  LesPatrons_de_Fonctions2.vcxproj -> C:\Users\MOUANWIYA Ali Soule\source\repos\LesPatrons_de_Fonctions2\Debug\LesPatrons_de_Fonctions2.exe

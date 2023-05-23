@@ -1,0 +1,7 @@
+C:\Users\MOUANWIYA Ali Soule\source\repos\LeDebogeur\bin\Debug\LeDebogeur.exe.config
+C:\Users\MOUANWIYA Ali Soule\source\repos\LeDebogeur\bin\Debug\LeDebogeur.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\LeDebogeur\bin\Debug\LeDebogeur.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\LeDebogeur\obj\Debug\LeDebogeur.csprojAssemblyReference.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\LeDebogeur\obj\Debug\LeDebogeur.csproj.CoreCompileInputs.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\LeDebogeur\obj\Debug\LeDebogeur.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\LeDebogeur\obj\Debug\LeDebogeur.pdb

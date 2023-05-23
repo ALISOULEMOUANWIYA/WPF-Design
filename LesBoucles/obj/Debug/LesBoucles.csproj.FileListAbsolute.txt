@@ -1,0 +1,7 @@
+C:\Users\MOUANWIYA Ali Soule\source\repos\LesBoucles\bin\Debug\LesBoucles.exe.config
+C:\Users\MOUANWIYA Ali Soule\source\repos\LesBoucles\bin\Debug\LesBoucles.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\LesBoucles\bin\Debug\LesBoucles.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\LesBoucles\obj\Debug\LesBoucles.csprojAssemblyReference.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\LesBoucles\obj\Debug\LesBoucles.csproj.CoreCompileInputs.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\LesBoucles\obj\Debug\LesBoucles.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\LesBoucles\obj\Debug\LesBoucles.pdb

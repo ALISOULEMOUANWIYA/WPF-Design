@@ -1,0 +1,5 @@
+﻿  devoir_Produit.cpp
+devoir_Produit.obj : error LNK2019: symbole externe non résolu "public: __thiscall Product::Product(void)" (??0Product@@QAE@XZ) référencé dans la fonction _main
+devoir_Produit.obj : error LNK2019: symbole externe non résolu "public: void __thiscall Product::read(void)" (?read@Product@@QAEXXZ) référencé dans la fonction _main
+devoir_Produit.obj : error LNK2019: symbole externe non résolu "public: static int __cdecl Product::get_const_produit(void)" (?get_const_produit@Product@@SAHXZ) référencé dans la fonction _main
+C:\Users\MOUANWIYA Ali Soule\source\repos\devoir_Produit\Debug\devoir_Produit.exe : fatal error LNK1120: 3 externes non résolus

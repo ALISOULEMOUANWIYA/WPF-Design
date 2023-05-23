@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="cours_mvvm1.MVVM.View.Products"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:cours_mvvm1.MVVM.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" 
+             d:DesignWidth="622"
+             Style="{StaticResource Page_Style}">
+
+    <UserControl.DataContext>
+        <vm:ProductsMV/>
+    </UserControl.DataContext>
+    <Grid>
+        <Border CornerRadius="0,20,20,0">
+            <Border.Background>
+                <ImageBrush ImageSource="/Asset/Icons/product_page.png"/>
+            </Border.Background>
+        </Border>
+        
+        <TextBlock Text="{Binding ProductAvailability}" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Center" 
+                   Foreground="#FFFF00" 
+                   FontSize="12" 
+                   FontFamily="/Asset/Fonts/#Rubik Medium" 
+                   Margin="276 300 0 0"/>
+
+        <TextBlock HorizontalAlignment="Right" 
+                   VerticalAlignment="Top" 
+                   Foreground="#FFF" 
+                   FontWeight="Bold" 
+                   FontSize="15" 
+                   Margin="0 290 238 0"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,7 @@
+C:\Users\MOUANWIYA Ali Soule\source\repos\MaPremierApplication\bin\Debug\MaPremierApplication.exe.config
+C:\Users\MOUANWIYA Ali Soule\source\repos\MaPremierApplication\bin\Debug\MaPremierApplication.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\MaPremierApplication\bin\Debug\MaPremierApplication.pdb
+C:\Users\MOUANWIYA Ali Soule\source\repos\MaPremierApplication\obj\Debug\MaPremierApplication.csprojAssemblyReference.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\MaPremierApplication\obj\Debug\MaPremierApplication.csproj.CoreCompileInputs.cache
+C:\Users\MOUANWIYA Ali Soule\source\repos\MaPremierApplication\obj\Debug\MaPremierApplication.exe
+C:\Users\MOUANWIYA Ali Soule\source\repos\MaPremierApplication\obj\Debug\MaPremierApplication.pdb

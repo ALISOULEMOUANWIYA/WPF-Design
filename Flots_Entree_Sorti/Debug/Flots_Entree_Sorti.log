@@ -1,0 +1,4 @@
+﻿  Flots_Entree_Sorti.cpp
+C:\Users\MOUANWIYA Ali Soule\source\repos\Flots_Entree_Sorti\Flots_Entree_Sorti.cpp(6,1): warning C4326: le type de retour de 'main' doit être 'int' au lieu de 'void'
+C:\Users\MOUANWIYA Ali Soule\source\repos\Flots_Entree_Sorti\Flots_Entree_Sorti.cpp(8,21): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+  Flots_Entree_Sorti.vcxproj -> C:\Users\MOUANWIYA Ali Soule\source\repos\Flots_Entree_Sorti\Debug\Flots_Entree_Sorti.exe
